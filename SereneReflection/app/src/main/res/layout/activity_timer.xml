@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".TimerActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_start_timer"
+            style="@style/TextMainStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CBD7CD"
+            android:text="@string/btn_start_timer_text"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/radios_gonk"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/editText"
+            style="@style/TextMainStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="236dp"
+            android:text="@string/timer_val" />
+
+        <RadioGroup
+            android:id="@+id/radios_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:id="@+id/fire"
+                style="@style/TextMainStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fire_mus_text" />
+
+            <RadioButton
+                android:id="@+id/wind"
+                style="@style/TextMainStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wind_mus_text" />
+
+            <RadioButton
+                android:id="@+id/water"
+                style="@style/TextMainStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/water_mus_text" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radios_gonk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/radios_music">
+
+            <RadioButton
+                android:id="@+id/gonk1"
+                style="@style/TextMainStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gong1_text" />
+
+            <RadioButton
+                android:id="@+id/gonk2"
+                style="@style/TextMainStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gong2_text" />
+
+            <RadioButton
+                android:id="@+id/gonk3"
+                style="@style/TextMainStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gong3_text" />
+        </RadioGroup>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

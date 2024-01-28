@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:padding="8dp"
+            android:textSize="10sp"
+            android:textStyle="bold|italic"
+            tools:ignore="SmallSp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quote"
+            android:layout_marginTop="10dp"
+            android:text="@string/quote_text"
+            android:layout_below="@id/app_name"
+            android:padding="8dp"
+            android:textSize="20sp"
+            style="@style/TextMainStyle"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quote_author"
+            android:text="@string/author_quote"
+            android:layout_below="@id/quote"
+            android:layout_alignEnd="@id/quote"
+            android:padding="2dp"
+            android:paddingBottom="50dp"
+            android:textSize="18sp"
+            style="@style/TextMainStyle"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/block_buttons"
+            android:layout_below="@id/quote_author"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/btn_timer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/meditation_icon"
+                    android:background="@null"/>
+
+                <TextView
+                    style="@style/TextMainStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/btn_timer_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/btn_breath"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/breath_icon" />
+
+                <TextView
+                    style="@style/TextMainStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_breath_text"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/btn_place"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/place_icon"
+                    android:background="@null"/>
+
+                <TextView
+                    style="@style/TextMainStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/btn_place_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/btn_stat"
+            android:layout_below="@id/block_buttons"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/statistic_icon"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_statistic"
+            style="@style/TextMainStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_stat"
+            android:textAlignment="center"
+            android:text="@string/btn_stat_text"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

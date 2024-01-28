@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SereneReflection</string>
+    <string name="timer_val">00:00:00</string>
+    <string name="start_btn">Начать</string>
+    <string name="pause_btn">Остановить</string>
+    <string name="resume_btn">Продолжить</string>
+    <string name="quote_text">Сосредоточься на точке и познаешь мир.</string>
+    <string name="author_quote">— Чим Чим</string>
+    <string name="btn_timer_text">Таймер</string>
+    <string name="btn_breath_text">Дыхание</string>
+    <string name="btn_place_text">Выбор места</string>
+    <string name="btn_stat_text">Статистика</string>
+    <string name="btn_start_timer_text">Начать</string>
+    <string name="fire_mus_text">Огонь</string>
+    <string name="wind_mus_text">Ветер</string>
+    <string name="water_mus_text">Вода</string>
+    <string name="gong1_text">Гонг 1</string>
+    <string name="gong2_text">Гонг 2</string>
+    <string name="gong3_text">Гонг 3</string>
+    <string name="btn_choose_text">Выбрать дату</string>
+</resources>
